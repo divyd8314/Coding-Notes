@@ -1,0 +1,48 @@
+#Challenge 1
+for i in range(0, 10+1):
+    print(i)
+
+#Challenge 2
+userInput = input("What is your name?")
+for i in range(3):
+    print(userInput)
+
+#Challenge 3
+startingNum = int(input("Enter a starting number:"))
+for i in range(startingNum, startingNum+4):
+    print(i)
+
+#Challenge 4
+startingNum = int(input("Enter a starting number:"))
+endingNum = int(input("Enter an ending number:"))
+for i in range(startingNum, endingNum+1):
+    print(i)
+
+#Challenge 5
+inputNum = int(input("Input a number:"))
+while inputNum>10:
+    print("Too high")
+    inputNum = int(input("Input a number:"))
+print(inputNum)
+
+#Challenge 6
+inputNum = int(input("Enter a number:"))
+inputYorN = input("Would you like to double the number, answer Y for yes and N for no")
+while inputYorN.lower()=="y":
+    inputNum = inputNum*2
+    print(inputNum)
+    inputYorN = input("Would you like to double the number, answer Y for yes and N for no:")
+print("You chose not to double, the number is now", inputNum) 
+
+#Challenge 7
+userInput = input("Would you like a cup of tea?:")
+while userInput.lower() == "no" or userInput.lower() == "n":
+    userInput = input("Would you like a cup of tea?:")
+print("sorry we have run out of tea")
+
+
+
+
+
+    
+                    
