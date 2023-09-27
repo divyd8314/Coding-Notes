@@ -16,7 +16,7 @@ pprint(new_nobel)
 physics = tuple(filter(lambda x: x.field=='physics',scientists))
 pprint(physics)
 
-#reuse a filter 
+#reuse a filter
 def nobel_filter(x):
     return x.nobel is True 
 pprint(tuple(filter(nobel_filter, scientists)))
