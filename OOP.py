@@ -45,9 +45,50 @@ rec3 = Rectangle(6, 7)
 rec3.change_size(4,10)
 print(rec2.perimeter())
 
+#OOP and practial modelling 
+class LightSwitch():
+    def __init__(self):
+        self.switchIsOn = False 
+    def turnOn(self):
+        self.switchIsOn = True 
+    def turnOff(self):
+        self.switchIsOn = False 
+    def show(self):
+        print('Status of light', self.switchIsOn)
+light1 = LightSwitch()
+light1.show()
+light1.turnOn()
+light1.show()
 
+#Create class DimmerSwitch() with same properties as previous example
+#Include another property called brightness
+#The brightness can go between 1-10
+#The brightness should be zero when an object is created 
+#Should be able to raise and lower brightness 
+#Method show() should have two outputs, 1. Switch is on?, 2. Brightness is ...
 
+class DimmerSwitch():
+    def __init__(self):
+        self.brightness = 0
+        self.SwitchisOn = False 
+    def turnOn(self):
+        self.SwitchisOn = True
+    def turnOff(self):
+        self.SwitchisOff = False 
+    def raiseBrightness(self, x):
+        if self.brightness<10:
+            self.brightness+=x
+    def lowerBrightness(self,x):
+        if self.brightness>0:
+            self.brightness-=x
+    def show(self):
+        print('Switch is on', self.SwitchisOn,
+              'Brightness is ', self.brightness)
+        
 
-
-
+light1=DimmerSwitch()
+light2 = DimmerSwitch()
+light1.turnOn()
+light1.raiseBrightness(2)
+light1.show()
 
