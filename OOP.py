@@ -92,3 +92,41 @@ light1.turnOn()
 light1.raiseBrightness(2)
 light1.show()
 
+#Real world bank account example 
+class Account():
+    def __init___(self, name, balance, password):
+        self.name = name 
+        self.balance = balance 
+        self.password = password 
+    def deposit(self, amount, password):
+        if password != self.password:
+            print("sorry incorrect password")
+            return None
+        if amount<0:
+            print("Deposit unsuccessful, amount not valid")
+            return None 
+        self.balance = self.balance+amount
+        return self.balance 
+    def withdraw(self, amount, password):
+        if password!=self.password:
+            print("sorry incorrect password")
+            return None 
+        if amount>self.balance:
+            print("Amount more than in account")
+            return None 
+        if amount<0:
+            print("Withdrawal unsuccessful, amount not valid")
+            return None 
+        self.balance = self.balance-amount
+        return self.balance 
+    def balance(self, password):
+        if password!=self.password:
+            print("sorry incorrect password")
+            return None 
+        return self.balance 
+    def show(self, password):
+        print('Name: ', self.name)
+        print('Balance: ', self.balance)
+        print("Password: ", self.password)
+
+
