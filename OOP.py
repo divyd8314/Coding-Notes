@@ -94,7 +94,7 @@ light1.show()
 
 #Real world bank account example 
 class Account():
-    def __init___(self, name, balance, password):
+    def __init__(self, name, balance, password):
         self.name = name 
         self.balance = balance 
         self.password = password 
