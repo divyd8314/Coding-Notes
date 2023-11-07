@@ -25,7 +25,7 @@ class Air_purifier():
             print("Replace the carbon filter immediately")
         self.carbon=self.carbon+carbon
     
-testcase = (2, )
+testcase = (2, True)
 
 
 
