@@ -12,10 +12,13 @@ class Air_purifier():
         if self.level<=3:
             self.level=self.level+1
     def On(self):
+        if self.power == True:
+            self.power==False 
+            return self.power
+        if self.power==False:
+            self.power==True 
+            return self.power
         self.on_off = True 
-        print("The light is on: ", self.on_off)
-    def Off(self):
-        self.on_off = False 
     def HEP_filter(self, filter):
         if filter>=10:
             print("Replace filter immediately")
